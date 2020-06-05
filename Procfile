@@ -1,1 +1,1 @@
-web: gunicorn CryptoNews_Aggregator.wsgi --log-file -
+web: manage.py runserver 0.0.0.0:$PORT
