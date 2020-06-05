@@ -1,2 +1,1 @@
-web: python manage.py runserver
-worker: celeryd --loglevel=INFO
+web: gunicorn CryptoNews_Aggregator.wsgi
