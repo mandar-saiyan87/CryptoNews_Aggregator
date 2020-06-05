@@ -1,1 +1,1 @@
-"web: gunicorn CryptoNews_Aggregator.wsgi --log-file -" 
+web: gunicorn CryptoNews_Aggregator.wsgi --log-file -
