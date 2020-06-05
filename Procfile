@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath CryptoNews_Aggregator.wsgi
+web: gunicorn python manage.py runserver 0.0.0.0:$PORT
