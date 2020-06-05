@@ -7,7 +7,7 @@ from news.models import Headline
 ###################################################################################
 #Scrape website and create database
 def scrape(request):
-    res = requests.get('https://bitcoinist.com/category/cryptocurrency-news/')
+    res = requests.get('https://bitcoinist.com/category/bitcoin/')
     soup = BSoup(res.text, 'html.parser')
     main = soup.select('.featured-image')[6:]
     for data in main:
