@@ -24,7 +24,7 @@ def scrape(request):
 ##############################################################################
 #Serve stored database object
 def news_list(request):
-    headlines = Headline.objects.all()[:12:0]
+    headlines = Headline.objects.all().order_by('-id')[:12:-1]
     context = {
         'object_list': headlines
     }
